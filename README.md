@@ -1,42 +1,36 @@
 # ask-me-anything-chatbot
 
-Zenix Finance Website
-Zenix Finance is a beautifully designed black-and-white themed website for financial analysis and education. It allows users to ask financial-related questions and view relevant YouTube videos for learning.
+💻 Zenix Finance Website
+Zenix Finance is a modern, black-and-white themed finance website designed to provide users with financial insights and educational resources. This platform allows users to analyze financial queries and displays relevant YouTube videos for additional guidance and learning.
 
-Features
-Elegant black-and-white design with an aesthetic, professional look.
-Analyze financial goals and get instant responses.
-Display educational YouTube videos related to the user's query.
-Fully responsive and interactive design.
-Table of Contents
-Features
-Technologies Used
-Project Structure
-Installation
-Deployment
-Usage
-Screenshots
-License
-Technologies Used
-Frontend: HTML, CSS, JavaScript
-Backend: Python, Flask
+🌟 Features
+🔎 Financial Query Analysis: Users can type any financial-related question and get an instant response.
+🎥 Educational Videos: Displays curated YouTube videos related to the user's query.
+🎨 Aesthetic Design: Features a sleek, artistic black-and-white theme for a professional and elegant look.
+⚡ Responsive UI: Fully responsive design for seamless experience across all devices.
+🛠️ Tech Stack
+Frontend:
+HTML5: Structure of the website.
+CSS3: Styling and layout.
+JavaScript: Interactive user interface.
+Backend:
+Python: Core backend logic.
+Flask: Lightweight web framework for API and routing.
 APIs:
-OpenAI API (optional for analysis)
-YouTube Data API for fetching videos
-Hosting: Render (or Fly.io/Vercel)
-Project Structure
+YouTube Data API: Fetches video suggestions based on user queries.
+📂 Project Structure
 bash
 Copy code
-chatgpt-finance-website/
+zenix-finance-website/
 ├── app.py              # Flask backend application
 ├── requirements.txt    # Python dependencies
-├── .env                # API keys (not included in the repo)
+├── .env                # API keys (excluded in deployment)
 ├── static/             # Static files directory
 │   ├── index.html      # Frontend HTML file
 │   ├── styles.css      # CSS file
 │   ├── script.js       # JavaScript file
 │   └── zenix-logo.png  # Logo image
-Installation
+🚀 Getting Started
 1. Clone the Repository
 bash
 Copy code
@@ -51,44 +45,50 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 bash
 Copy code
 pip install -r requirements.txt
-4. Set Up Environment Variables
-Create a .env file in the project directory and add your API keys:
-
+4. Set Up API Keys
+Create a .env file in the project directory.
+Add the following:
 plaintext
 Copy code
-CHATGPT_API_KEY=your-chatgpt-api-key
 YOUTUBE_API_KEY=your-youtube-api-key
 5. Run the Application
 bash
 Copy code
 python app.py
-The app will be available at http://127.0.0.1:5000.
+Visit the app at http://127.0.0.1:5000.
 
-Deployment
-Using Render
+🧪 How It Works
+User Query: Enter a finance-related question into the input box (e.g., "How to start investing?").
+Analyze Query: The app processes the query and displays a mock analysis result.
+Educational Videos: Curated YouTube videos related to the query are displayed on the right side.
+🖼️ Screenshots
+Homepage
+
+YouTube Videos Section
+
+🛠️ Deployment
+Deploy on Render
 Push your code to a GitHub repository.
 Create a free account on Render.
 Connect your GitHub repository.
-Add environment variables (CHATGPT_API_KEY and YOUTUBE_API_KEY) in Render.
-Deploy your app and get a live URL.
-Using Fly.io
-Install the Fly.io CLI.
-Run flyctl launch to initialize the project.
-Add a Dockerfile to the project (optional).
-Deploy using flyctl deploy.
-Access your app via the provided URL.
-Usage
-Open the deployed app in your browser.
-Enter your financial query in the text box (e.g., "How to start saving for retirement?").
-Click Analyze to see an analysis and relevant YouTube videos.
-View educational videos on the right side of the page.
-Screenshots
-Homepage
-
-Video Section
-
-Contributing
-We welcome contributions to improve Zenix Finance! Feel free to submit a pull request or open an issue on the repository.
-
-License
+Add environment variables (YOUTUBE_API_KEY) in Render.
+Deploy the application.
+Alternative: Deploy on Fly.io
+Install the Fly.io CLI:
+bash
+Copy code
+curl -L https://fly.io/install.sh | sh
+Initialize the project:
+bash
+Copy code
+flyctl launch
+Deploy using:
+bash
+Copy code
+flyctl deploy
+🏗️ Future Enhancements
+Integrate advanced AI/ML models for financial analysis.
+Add support for dynamic charts and data visualization.
+Include additional APIs for market trends and insights.
+📝 License
 This project is licensed under the MIT License.
